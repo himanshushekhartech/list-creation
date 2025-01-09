@@ -1,0 +1,44 @@
+.list-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    width: 250px; /* Adjust the width as needed */
+    height: 400px; /* Fixed height to enable scrolling */
+    overflow: hidden;
+  }
+  
+  .vertical-slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%; /* Use the full height of the container */
+    padding-right: 10px; /* Ensure space for the scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
+  .vertical-slider-container::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+  }
+  
+  .vertical-slider-container::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    border-radius: 10px; /* Rounded scrollbar */
+  }
+  
+  .vertical-slider-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover effect for scrollbar */
+  }
+  
+  .list-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
